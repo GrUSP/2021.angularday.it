@@ -13,9 +13,9 @@ type: website
 slug: angularday
 edition: 2021
 title: "angularday 2021"
-description: "angularday 2021, online conference"
+description: "The Italian Angular conference, happening online on 12th November 2021"
 #   separate keywords by comma, no spaces
-keywords: conference,software conference,symfony,php,tech conference
+keywords: conference,software conference,angular,javascript,tech conference
 author: GrUSP
 language: en
 timezone: 'Europe/Rome'
@@ -25,9 +25,9 @@ open_graph:
   # si può sostituire con il logo della conferenza (`img/conference-logo.png`)
   image: 'img/grusp-logo-full.png'
 twitter:
-  twitter_id: angulardayit
+  twitter_id: angularday
 fb:
-  fb_id: angulardayit
+  fb_id: angularday
 
 # Breadcrumbs
 breadcrumb:

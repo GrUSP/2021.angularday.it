@@ -26,7 +26,7 @@ conference:
   title_pre: "Welcome to"
   title: "angularday Digital Edition"
   city: "online"
-  date: 2021-04-15T10:00+02:00
+  date: 2021-11-12T10:00+01:00
   # Use the next field to override the date in the hero
   hero_date_text:
   countdown_visible: true
@@ -51,15 +51,15 @@ conference:
   cfp_readmore_label: "Read more"
   cfp_open_label: "Submissions accepted until"
   cfp_open_title: "Call For Papers Now Open!"
-  cfp_deadline: 2021-02-15T23:59+01:00
+  cfp_deadline: 2021-09-15T23:59+02:00
   cfp_register_label: "Apply now"
   cfp_register_aria_label: "Apply now to our Call for Papers"
   # "general information" ("what is it?") component
   geninfo_visible: true
   geninfo_title: "What is it?"
-  geninfo_description: "angularDay 2020 is the 9th edition of the Italian angular conference, for the 3rd year in a row organized by GrUSP, organizers of events like <a href='https://www.phpday.it/'>phpday</a> and <a href='https://www.jsday.it/'>jsday</a>.
+  geninfo_description: "angularDay 2021 is the 5th edition of the Italian angular conference, organized by GrUSP, organizers of events like <a href='https://www.phpday.it/'>phpday</a> and <a href='https://www.jsday.it/'>jsday</a>.
   <br> <br /> The event is international and all sessions will be in English.
-  <br> The event’s goal is to allow all angularists to meet and share experience while having fun and networking in an enjoyable context.
+  <br> The event’s goal is to allow all angular developers to meet and share experience while having fun and networking in an enjoyable context.
   <br />
   <br> Due to the current pandemic situation, the 2021 edition is taking place online."
   geninfo_about_label: "About"
@@ -72,11 +72,11 @@ conference:
   # fields taken from the Mail chimp default form -- set to `true` to add subscription
   newsletter_lists:
     php: false
-    javascript: false
+    javascript: true
     design: false
     devops: false
-    frontend: false
-    angular: true
+    frontend: true
+    ruby: false
     entrepreneurship: false
     local_events: false
     everything: false
@@ -91,7 +91,7 @@ conference:
   newsletter_disclaimer: "We use Mailchimp as our email marketing platform. By subscribing to the newsletter, you accept that your data are transmitted to Mailchimp to be processed. "
   newsletter_legal_url: "https://mailchimp.com/legal/"
   newsletter_legal_label: "Information about Mailchimp's privacy policy"
-  # "speakers" component. set the first parameter to true to make it appear in home page, false means hidden	
+  # "speakers" component. set the first parameter to true to make it appear in home page, false means hidden
   mcs_title: "MC"
   speakers_visible: false
   speakers_title: "speaker"
@@ -101,7 +101,7 @@ conference:
   topics_description: "We'll talk about..."
   topics:
     - "angular"
-    - "angular On Rails"
+    - ""
     - "Security"
     - "Testing"
     - "Continuous Integration"
@@ -127,7 +127,7 @@ conference:
   vimeo_base_url: "https://vimeo.com/album/"
   vimeo_url_suffix: "/embed"
   #   (embed YouTube playlist: prendere l'ID della lista dall'URL, la parte dopo '&list=', e metterla qui sotto)
-  youtube_playlist_id: "PLWK9j6ps_unmgzGOw3cbjS8ID-b-cF1d9"
+  youtube_playlist_id: "PLWK9j6ps_unmfRS_XJkMDli3o0vPVYNA2"
   #   (embed Vimeo showcase: prendere l'ID dello showcase e metterla qui sotto)
   vimeo_showcase_id: "6048109"
   # Location section in home page. set the first parameter to true to make it appear in home page, false means hidden
@@ -141,16 +141,16 @@ conference:
   venue_img_credits: ""
   # Sponsors section in home page. set the first parameter to true to make it appear in home page, false means hidden
   sponsors_visible: true
-  sponsor_title_home: "Sponsors"
+  sponsor_title_home: "Thanks for your support!"
   # this is for the Community partners section in home page
   community_partners: true
   community_partners_title: "Community Partners"
   # this is for the Social links block
   social_follow: "Follow us on"
-  social_fb_url: "https://www.facebook.com/angulardayit/"
+  social_fb_url: "https://www.facebook.com/angularday/"
   social_linkedin_url: "https://www.linkedin.com/company/grusp/"
-  social_twitter_url: "https://twitter.com/angulardayit"
-  social_vimeo_url: "https://vimeo.com/grusp"
+  social_twitter_url: "https://twitter.com/angularday"
+  social_vimeo_url: "https://vimeo.com/channels/angularday"
   social_youtube_url: "https://www.youtube.com/c/grusp"
   social_instagram_url: "https://www.instagram.com/grusp_/"
 
@@ -161,12 +161,8 @@ conference:
   base_url: "angularday.it/"
   past_editions_pre: "Browse past editions:"
   past_editions:
-    2011: "2011"
-    2012: "2012"
-    2013: "2013"
-    2014: "2014"
-    2015: "2015"
-    2016: "2016"
+    2017: "2017"
+    2018: "2018"
     2019: "2019"
     2020: "2020"
   past_editions_videos_pre: "Videos from the past editions are available on "
@@ -184,7 +180,7 @@ conference:
     siteId: 1078163
     lang: en
     enableRemoteConsent: true
-    localConsentDomain: sfday.it
+    localConsentDomain: angularday.it
     rebuildIframe: true
   privacy_policy_url_common: "https://www.iubenda.com/privacy-policy/"
   footer_link_middle: " and our "
