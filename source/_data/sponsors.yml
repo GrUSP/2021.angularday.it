@@ -32,10 +32,11 @@ bronze:
   sponsor1:
     name: "Stickermule"
     logo_filename: "stickermule.svg"
-    site_url: "https://mule.to/p1j5"#   sponsor2:
-#     name: ""
-#     logo_filename: ""
-#     site_url: ""
+    site_url: "https://mule.to/p1j5"
+  sponsor2:
+    name: "This Dot Labs"
+    logo_filename: "thisdotlabs.png"
+    site_url: "https://www.thisdot.co"
 #   sponsor3:
 #     name: ""
 #     logo_filename: ""
