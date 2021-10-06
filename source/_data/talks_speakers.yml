@@ -1,41 +1,84 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: true
+generate_schedule_page: false
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &regular_speaker
+speaker_1: &craig
   speaker_in_speaker_lists: true
-  speaker_name: Luca Guidi
-  speaker_pic_filename: lucaguidi.png
-  speaker_role: Author of Hanami
-  speaker_bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. And however, enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  speaker_github_url: "https://github.com/jodosha"
-  speaker_twitter_url: "https://twitter.com/jodosha"
-speaker_2: &keynote_speaker
+  speaker_name: Craig Spence
+  speaker_pic_filename: craig-spence.png
+  speaker_role: Senior Engineer @ Spotify
+  speaker_bio: "is a Software Engineer from New Zealand, working at Spotify in Stockholm. He is an Angular GDE and loves building cool things that help teams build cool things! He also loves punk rock, Disney’s Frozen, and his cat Cosy."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/phenomnominal"
+speaker_2: &kate
   speaker_in_speaker_lists: true
-  speaker_name: Keynote Speaker
-  speaker_pic_filename: giulia.jpeg
-  speaker_role: "speaker role (optional)"
-  speaker_bio: "Example of a workshop host that must appear in speaker lists"
-speaker_3: &mc
+  speaker_name: Kate Sky
+  speaker_pic_filename: kate-sky.png
+  speaker_role: CSA Technologies Inc founder
+  speaker_bio: "I am a full-stack developer with over 20 years of experience. I specialize in front-end development using Angular platform.
+I am a founder of CSA Technologies Inc, which allows me to empower companies with my consulting work. I am also a mother of 5 remarkable children.
+My expertise in the industry has been motivating me to share my knowledge with other mothers. I have seen a real change over the years in the IT sector, with more women joining the programming teams.
+There is a significant demand for mentors who can empower and teach new programmers to navigate this sector. There is an abundance of technical knowledge on the internet but a lack of interpersonal relationships building tools.
+My goal is to empower women to code and to have a fulfilling career while raising a family.
+In 2021 I started running a free weekly workshop where I teach how to get started with Angular."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/Katesky8"
+speaker_3: &maxim
   speaker_in_speaker_lists: true
-  speaker_name: MC
-  speaker_pic_filename: giulia.jpeg
-  speaker_role: "speaker role (optional)"
-  speaker_bio: "Example of a workshop host that must appear in speaker lists"
-  is_mc: true
+  speaker_name: Maxim	Salnikov
+  speaker_pic_filename: maxim-salnikov.png
+  speaker_role: "DevRel @ Microsoft"
+  speaker_bio: "is an Oslo-based cloud and web front-end geek. He builds web applications since the end of the last century and shares his extensive experience with many aspects of the web platform by speaking/training at developer events around the world. To introduce Angular to the developer community, Maxim is running his own technical events including ngVikings conference, Angular Oslo meetup, and ngCommunity gathering."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/webmaxru"
+speaker_4: &stanimira
+  speaker_in_speaker_lists: true
+  speaker_name: Stanimira Vlaeva
+  speaker_pic_filename: stanimira-vlaeva.png
+  speaker_role: Developer Advocate @ MongoDB
+  speaker_bio: "is a Developer Advocate at MongoDB and a Google Developer Expert for Angular. She loves open source and is part of the Technical Steering Committee for NativeScript. Her Twitter DMs are always open!"
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/StanimiraVlaeva"
+speaker_5: &tomas
+  speaker_in_speaker_lists: true
+  speaker_name: Tomas Trajan
+  speaker_pic_filename: tomas-trajan.png
+  speaker_role: CEO @ solveo GmbH, GDE for Angular & Web Technologies
+  speaker_bio: "Tomas is a Google Developer Expert for Angular & Web Technologies working as a consultant and Angular trainer currently empowering teams in Swiss enterprise organizations by implementing core functionality and architecture, introducing best practices and sharing know-how and optimizing workflows.
+Tomas always strives to provide as much value as possible for both the customers and the wider developer community which is underlined by a long track record of popular articles, talks and open source projects.
+His most recent endeavor was creating Omniboard - the best tool for enterprise lead software engineers and architects that helps them to get an overview to drive change by querying and tracking all their code bases!"
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/tomastrajan"
+  is mc: true
+# speaker_6: &mc
+#   speaker_in_speaker_lists: true
+#   speaker_name:
+#   speaker_pic_filename: .png
+#   speaker_role:
+#   speaker_bio: ""
+#   speaker_github_url: ""
+#   speaker_twitter_url: "https://twitter.com/"
+
+speakers:
+  speaker_1: *craig
+  speaker_2: *kate
+  speaker_3: *maxim
+  speaker_4: *stanimira
+  speaker_5: *tomas
+
 
 tracks:
   track_1: &track_1
     id: 1
     title: "Track 1"
-  track_2: &track_2
-    id: 2
-    title: "Track 2"
-  track_3: &track_3
-    id: 3
-    title: "Track 3 - fake track"
+ # track_2: &track_2
+ #   id: 2
+ #   title: "Track 2"
+ # track_3: &track_3
+ #   id: 3
+ #   title: "Track 3 - fake track"
 
 # NB "item_type": tipi di "talk"
 #   "talk" -- un talk vero e proprio, che va anche in components/speakers e nella pagina talks_speakers
@@ -47,134 +90,120 @@ tracks:
 
 days:
   day_1:
-    date: 2020-09-16T09:00
+    date: 2021-11-12T09:45+01:00
     title: "Day 1"
     talks:
-      talk_1:
+    # service
+      opening:
         item_type: "service"
-        start_datetime: 2020-09-16T09:00
-        end_datetime: 2020-09-16T09:30
-        talk_title: "Check-in"
-      talk_2:
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Opening by GrUSP"
+      closing:
         item_type: "service"
-        start_datetime: 2020-09-16T09:30
-        end_datetime: 2020-09-16T09:45
-        talk_title: "GrUSP presentation"
-      talk_3:
-        item_type: "keynote"
-        start_datetime: 2020-09-16T09:45
-        end_datetime: 2020-09-16T10:00
-        talk_title: "Keynote title (optional)"
-        talk_description: "Keynote description (optional)"
-        speakers:
-          speaker_1: *keynote_speaker
-      talk_4:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2020-09-16T10:00
-        end_datetime: 2020-09-16T10:45
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_5:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T12:00
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_6:
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "See you tomorrow!"
+      coffee-morning:
         item_type: "service"
-        start_datetime: 2020-09-16T10:45
-        end_datetime: 2020-09-16T11:00
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
         talk_title: "Coffee break"
         service_icon: "coffee"
-      talk_7:
-        item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T10:00
-        end_datetime: 2020-09-16T10:45
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_8:
-        item_type: "workshop"
-        track: *track_3
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "Workshop title (optional)"
-        talk_description: "Workshop description (optional) very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long "
-        speakers:
-          speaker_1: *regular_speaker
-      talk_9:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2020-09-16T12:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "talk in second slot #1"
-        talk_description: "test per rowspan"
-        speakers:
-          speaker_1: *regular_speaker
-      talk_10:
-        item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T12:00
-        talk_title: "This is a talk in track 2"
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_11:
+      coffee-afternoon:
         item_type: "service"
-        start_datetime: 2020-09-16T13:00
-        end_datetime: 2020-09-16T14:00
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Coffee break"
+        service_icon: "coffee"
+      lunch:
+        item_type: "service"
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
         talk_title: "Lunch break"
         service_icon: "cutlery"
-      talk_12:
-        item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T12:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "talk in second slot #2"
-        talk_description: "test per rowspan"
-        speakers:
-          speaker_1: *regular_speaker
 
-  # day_2:
-  #   date: 2020-09-17T09:00
-  #   title: "Day 2"
-  #   talks:
-  #     talk_1:
-  #       item_type: "service"
-  #       start_datetime: 2020-09-16T09:00
-  #       end_datetime: 2020-09-16T09:30
-  #       talk_title: "Welcome Coffee"
-  #       service_icon: "coffee"
-  #     talk_2:
-  #       track: *track_1
-  #       item_type: "talk"
-  #       start_datetime: 2020-09-17T09:30
-  #       end_datetime: 2020-09-17T10:45
-  #       talk_title: "This is a talk at the beginning of the second day"
-  #       talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  #       talk_video_url:
-  #       speakers:
-  #         speaker_1: *regular_speaker
-  #     talk_3:
-  #       track: *track_2
-  #       item_type: "talk"
-  #       start_datetime: 2020-09-17T09:30
-  #       end_datetime: 2020-09-17T10:45
-  #       talk_title: "This is a talk in the second day, track 2"
-  #       talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  #       talk_video_url:
-  #       speakers:
-  #         speaker_1: *regular_speaker
+    # talks
+      talk1:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Betterer: Incremental Improvement"
+        talk_description: "If you’re working on a project that has been around for a while, chances are there’s a few cobwebs 🕸 on some parts of your codebase that make you cringe…
+This is a totally normal part of the natural growth of an application. But how can we improve our software and correct past mistakes in a sustainable way, and without massively blowing out the scope? 🤔
+Let’s discuss an incremental approach to dealing with mature codebases! We will take some ideas from genetic 🧬 algorithms and micro-service architectures, and combine them with code analysis and snapshot 📸testing, and look at a pragmatic, evolutionary approach to codebase health and maintenance."
+        talk_video_url:
+        speakers:
+          speaker_1: *craig
+      talk2:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Who needs Inheritance and composition, when you can copy paste the same code in every class!"
+        talk_description: "Best practices of using composition over inheritance and how to make rich angular components by utilising directives!"
+        talk_video_url:
+        speakers:
+          speaker_1: *kate
+      talk3:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Keynote: The status of Angular"
+        talk_description: "What is the current status of the Angular framework? What new features are there in the latest version and on the roadmap? Let's have a bird-eye view of the framework to make informed technical decisions, to make sure that we use the latest best practices, and to look into the future of our Angular projects with confidence."
+        talk_video_url:
+        speakers:
+          speaker_1: *maxim
+      talk4:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Data Visualisations with MongoDB Charts and Angular"
+        talk_description: "MongoDB Charts is a cloud based data visualisation tool. In this talk, we'll learn how to consume various data sources to create visualisations with MongoDB Charts.
+        Together, we'll build a real-time monitoring dashboard with Angular and our own visualisations using some of the many available chart types."
+        talk_video_url:
+        speakers:
+          speaker_1: *stanimira
+      talk5:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T09:45+01:00
+        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "The best way to Architect Your Angular Libraries"
+        talk_description: "In this talk we're going to explore how to architect Angular libraries with the help of sub-entries so that our consumers can benefit from the smallest possible bundle size and our teammates from great developer experience when adding additional components and services to the library itself!"
+        talk_video_url:
+        speakers:
+          speaker_1: *tomas
+      # talk6:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   start_datetime: 2021-11-12T09:45+01:00
+      #   end_datetime: 2021-11-12T09:45+01:00
+      #   talk_title: ""
+      #   talk_description: ""
+      #   talk_video_url:
+      #   speakers:
+      #     speaker_1: *
+      # talk7:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   start_datetime: 2021-11-12T09:45+01:00
+      #   end_datetime: 2021-11-12T09:45+01:00
+      #   talk_title: ""
+      #   talk_description: ""
+      #   talk_video_url:
+      #   speakers:
+      #     speaker_1: *
+      # talk8:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   start_datetime: 2021-11-12T09:45+01:00
+      #   end_datetime: 2021-11-12T09:45+01:00
+      #   talk_title: ""
+      #   talk_description: ""
+      #   talk_video_url:
+      #   speakers:
+      #     speaker_1: *
