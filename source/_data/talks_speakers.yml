@@ -162,9 +162,10 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
 #        end_datetime: 2021-11-12T09:45+01:00
-        talk_title: "Data Visualisations with MongoDB Charts and Angular"
-        talk_description: "MongoDB Charts is a cloud based data visualisation tool. In this talk, we'll learn how to consume various data sources to create visualisations with MongoDB Charts.
-        Together, we'll build a real-time monitoring dashboard with Angular and our own visualisations using some of the many available chart types."
+        talk_title: "NoSQL Data Modeling for Front-end Developers"
+        talk_description: "Data modeling is the process of figuring out how data should be represented and stored in your software system. Effective data models must balance between application needs, database performance characteristics and the structure of the data itself.
+        But why would you care about data modeling if you’re an Angular developer? Well, understanding how data flows through your application, will help you consume your backend API in a more efficient way.
+        In this talk, we’ll go through the basics of data modeling - from identifying relationships and cardinalities, to handling staleness and duplication. We’ll be discussing the data modeling methodology in the context of MongoDB, a NoSQL document database."
         talk_video_url:
         speakers:
           speaker_1: *stanimira
