@@ -30,10 +30,14 @@ silver:
     site_url: "https://www.mia-platform.eu/it/"
 bronze:
   sponsor1:
+    name: "omniboard"
+    logo_filename: "omniboard.png"
+    site_url: "https://omniboard.dev/"
+  sponsor2:
     name: "Stickermule"
     logo_filename: "stickermule.svg"
     site_url: "https://mule.to/p1j5"
-  sponsor2:
+  sponsor3:
     name: "This Dot Labs"
     logo_filename: "thisdotlabs.png"
     site_url: "https://www.thisdot.co"

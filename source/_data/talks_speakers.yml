@@ -12,7 +12,15 @@ speaker_1: &craig
   speaker_bio: "is a Software Engineer from New Zealand, working at Spotify in Stockholm. He is an Angular GDE and loves building cool things that help teams build cool things! He also loves punk rock, Disney’s Frozen, and his cat Cosy."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/phenomnominal"
-speaker_2: &kate
+speaker_2: &emma
+  speaker_in_speaker_lists: true
+  speaker_name: Emma Twersky
+  speaker_pic_filename: emma-twersky.png
+  speaker_role: Developer Relations Engineer on the Angular team @ Google
+  speaker_bio: "is passionate about good user experience and design."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/twerske"
+speaker_3: &kate
   speaker_in_speaker_lists: true
   speaker_name: Kate Sky
   speaker_pic_filename: kate-sky.png
@@ -25,7 +33,23 @@ My goal is to empower women to code and to have a fulfilling career while raisin
 In 2021 I started running a free weekly workshop where I teach how to get started with Angular."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/Katesky8"
-speaker_3: &maxim
+speaker_4: &katerina
+  speaker_in_speaker_lists: true
+  speaker_name: Katerina Skroumpelou
+  speaker_pic_filename: katerina-skroumpelou.png
+  speaker_role: Senior Software Engineer @ Narwhal Technologies
+  speaker_bio: "is a Google Developer Expert for Angular, Web Technologies, and the Google Maps Platform. She's also a co-founder and organizer for AngularAthens, the Angular meetup, in Athens, Greece and a mentor for Women on Top. Last year she co-founded RevApp (a way for hoteliers to optimize their revenues)."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/psybercity"
+speaker_5: &mark
+  speaker_in_speaker_lists: true
+  speaker_name: Mark Thompson
+  speaker_pic_filename: mark-thompson.png
+  speaker_role: Developer Advocate @ Google (Angular Team)
+  speaker_bio: "loves to teach and code. His love for both of these disciplines has led to becoming an award winning university instructor and software engineer. He comes with a passion for creating meaningful learning experiences. With over a decade of developing solutions across the tech stack, Mark likes to use that experience to break down fear of technology and make challenging technical topics more accessible. Lately, Mark has been spending time creating a disruptive fitness community by building Totally Strong, Inc. and working as a Developer Advocate at Google."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/marktechson"
+speaker_6: &maxim
   speaker_in_speaker_lists: true
   speaker_name: Maxim	Salnikov
   speaker_pic_filename: maxim-salnikov.png
@@ -33,7 +57,7 @@ speaker_3: &maxim
   speaker_bio: "is an Oslo-based cloud and web front-end geek. He builds web applications since the end of the last century and shares his extensive experience with many aspects of the web platform by speaking/training at developer events around the world. To introduce Angular to the developer community, Maxim is running his own technical events including ngVikings conference, Angular Oslo meetup, and ngCommunity gathering."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/webmaxru"
-speaker_4: &stanimira
+speaker_7: &stanimira
   speaker_in_speaker_lists: true
   speaker_name: Stanimira Vlaeva
   speaker_pic_filename: stanimira-vlaeva.png
@@ -41,7 +65,7 @@ speaker_4: &stanimira
   speaker_bio: "is a Developer Advocate at MongoDB and a Google Developer Expert for Angular. She loves open source and is part of the Technical Steering Committee for NativeScript. Her Twitter DMs are always open!"
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/StanimiraVlaeva"
-speaker_5: &tomas
+speaker_8: &tomas
   speaker_in_speaker_lists: true
   speaker_name: Tomas Trajan
   speaker_pic_filename: tomas-trajan.png
@@ -52,7 +76,7 @@ His most recent endeavor was creating Omniboard - the best tool for enterprise l
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/tomastrajan"
   is_mc: true
-speaker_6: &trishul
+speaker_9: &trishul
   speaker_in_speaker_lists: true
   speaker_name: Trishul Goel
   speaker_pic_filename: trishul-goel.png
@@ -63,11 +87,14 @@ speaker_6: &trishul
 
 speakers:
   speaker_1: *craig
-  speaker_2: *kate
-  speaker_3: *maxim
-  speaker_4: *stanimira
-  speaker_5: *tomas
-  speaker_6: *trishul
+  speaker_2: *emma
+  speaker_3: *kate
+  speaker_4: *katerina
+  speaker_5: *mark
+  speaker_6: *maxim
+  speaker_7: *stanimira
+  speaker_8: *tomas
+  speaker_9: *trishul
 
 
 tracks:
@@ -191,16 +218,18 @@ Sounds good? Let’s see how in this talk."
         talk_video_url:
         speakers:
           speaker_1: *trishul
-      # talk7:
-      #   item_type: "talk"
-      #   track: *track_1
-      #   start_datetime: 2021-11-12T09:45+01:00
-      #   end_datetime: 2021-11-12T09:45+01:00
-      #   talk_title: ""
-      #   talk_description: ""
-      #   talk_video_url:
-      #   speakers:
-      #     speaker_1: *
+      talk7:
+        item_type: "talk"
+        track: *track_1
+#        start_datetime: 2021-11-12T09:45+01:00
+#        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Angular Core Team + Community: Moving Forward Together"
+        talk_description: "Join the Angular core team and Google Developer Experts for this interactive panel where you can ask the Angular core team and Google Developer Experts questions about upcoming releases, community initiatives, and learning resources for Angular!"
+        talk_video_url:
+        speakers:
+          speaker_1: *emma
+          speaker_2: *katerina
+          speaker_3: *mark
       # talk8:
       #   item_type: "talk"
       #   track: *track_1
