@@ -71,12 +71,21 @@ speaker_8: &tomas
   speaker_pic_filename: tomas-trajan.png
   speaker_role: CEO @ solveo GmbH - MASTER OF CEREMONIES
   speaker_bio: "is a Google Developer Expert for Angular & Web Technologies working as a consultant and Angular trainer currently empowering teams in Swiss enterprise organizations by implementing core functionality and architecture, introducing best practices and sharing know-how and optimizing workflows.
-Tomas always strives to provide as much value as possible for both the customers and the wider developer community which is underlined by a long track record of popular articles, talks and open source projects.
-His most recent endeavor was creating Omniboard - the best tool for enterprise lead software engineers and architects that helps them to get an overview to drive change by querying and tracking all their code bases!"
+  Tomas always strives to provide as much value as possible for both the customers and the wider developer community which is underlined by a long track record of popular articles, talks and open source projects.
+  His most recent endeavor was creating Omniboard - the best tool for enterprise lead software engineers and architects that helps them to get an overview to drive change by querying and tracking all their code bases!"
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/tomastrajan"
   is_mc: true
-speaker_9: &trishul
+speaker_9: &tracy
+  speaker_in_speaker_lists: true
+  speaker_name: Tracy Lee
+  speaker_pic_filename: tracy-lee.png
+  speaker_role: CEO @ This Dot Labs
+  speaker_bio: "is a serial entrepreneur, Google Developer Expert, Microsoft MVP, and Women Techmakers Lead who loves to build companies and communities. As a co-founder of This Dot Media and This Dot Labs, a JavaScript consulting firm, she has a passion for coding, especially with Angular, React, and Ember.
+  She is a member of the RxJS Core Team, the host of multiple web shows and podcasts including the Modern Web Podcast, and a keynote speaker who has traveled the world speaking about JavaScript, tech leadership, and diversity in tech."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/ladyleet"
+speaker_10: &trishul
   speaker_in_speaker_lists: true
   speaker_name: Trishul Goel
   speaker_pic_filename: trishul-goel.png
@@ -94,7 +103,8 @@ speakers:
   speaker_6: *maxim
   speaker_7: *stanimira
   speaker_8: *tomas
-  speaker_9: *trishul
+  speaker_9: *tracy
+  speaker_10: *trishul
 
 
 tracks:
@@ -230,6 +240,7 @@ Sounds good? Let’s see how in this talk."
           speaker_1: *emma
           speaker_2: *katerina
           speaker_3: *mark
+          speaker_4: *tracy
       # talk8:
       #   item_type: "talk"
       #   track: *track_1
