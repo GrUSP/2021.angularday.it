@@ -81,7 +81,7 @@ speaker_10: &trishul
   speaker_in_speaker_lists: true
   speaker_name: Trishul Goel
   speaker_pic_filename: trishul-goel.png
-  speaker_role: Frontend developer @ westwing
+  speaker_role: Principal engineer @ Westwing
   speaker_bio: "is a professional frontend developer; writes React code for living and volunteers for Mozilla to justify his existence. He loves to talk about modern Javascript and tries to use it to solve all of his problems, even the domestic ones. He is an expert in developing PWAs and browser extensions."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/trishulgoel"
@@ -214,8 +214,8 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
 #        end_datetime: 2021-11-12T09:45+01:00
         talk_title: "Destructuring frontend monoliths with Microfrontends"
         talk_description: "From loading Ajax requests in browsers to have full-blown frameworks; Javascript has come a long way. While moving stuff from backend to frontend the problems of backend are also ported. The Bigger the code gets bigger the problems, more dependencies, harder maintainability, eventually all the problems of a huge monolith.
-With Microfrontends, we can break this monolith into smaller independent, maintainable apps.
-Sounds good? Let’s see how in this talk."
+        With Microfrontends, we can break this monolith into smaller independent, maintainable apps.
+        Sounds good? Let’s see how in this talk."
         talk_video_url:
         speakers:
           speaker_1: *trishul

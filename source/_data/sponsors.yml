@@ -41,6 +41,12 @@ bronze:
     name: "This Dot Labs"
     logo_filename: "thisdotlabs.png"
     site_url: "https://www.thisdot.co"
+  sponsor4:
+    name: "Westwing"
+    logo_filename: "westwing.png"
+    site_url: "https://www.westwing.com/home/"
+
+
 #   sponsor3:
 #     name: ""
 #     logo_filename: ""
