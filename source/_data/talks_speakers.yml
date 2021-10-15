@@ -33,14 +33,6 @@ My goal is to empower women to code and to have a fulfilling career while raisin
 In 2021 I started running a free weekly workshop where I teach how to get started with Angular."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/Katesky8"
-speaker_4: &katerina
-  speaker_in_speaker_lists: true
-  speaker_name: Katerina Skroumpelou
-  speaker_pic_filename: katerina-skroumpelou.png
-  speaker_role: Senior Software Engineer @ Narwhal Technologies
-  speaker_bio: "is a Google Developer Expert for Angular, Web Technologies, and the Google Maps Platform. She's also a co-founder and organizer for AngularAthens, the Angular meetup, in Athens, Greece and a mentor for Women on Top. Last year she co-founded RevApp (a way for hoteliers to optimize their revenues)."
-  speaker_github_url: ""
-  speaker_twitter_url: "https://twitter.com/psybercity"
 speaker_5: &mark
   speaker_in_speaker_lists: true
   speaker_name: Mark Thompson
@@ -98,7 +90,6 @@ speakers:
   speaker_1: *craig
   speaker_2: *emma
   speaker_3: *kate
-  speaker_4: *katerina
   speaker_5: *mark
   speaker_6: *maxim
   speaker_7: *stanimira
@@ -238,9 +229,8 @@ Sounds good? Let’s see how in this talk."
         talk_video_url:
         speakers:
           speaker_1: *emma
-          speaker_2: *katerina
-          speaker_3: *mark
-          speaker_4: *tracy
+          speaker_2: *mark
+          speaker_3: *tracy
       # talk8:
       #   item_type: "talk"
       #   track: *track_1
