@@ -45,7 +45,11 @@ bronze:
     name: "Westwing"
     logo_filename: "westwing.png"
     site_url: "https://www.westwing.com/home/"
-
+diversity:
+  sponsor1:
+    name: "Balsamiq"
+    logo_filename: "balsamiq.svg"
+    site_url: "https://balsamiq.com/"
 
 #   sponsor3:
 #     name: ""
