@@ -4,7 +4,16 @@ schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &craig
+
+speaker_1: &ankit
+  speaker_in_speaker_lists: true
+  speaker_name: Ankit	Sharma
+  speaker_pic_filename: ankit-sharma.png
+  speaker_role: SDE @ Cisco
+  speaker_bio: "SDE @Cisco | GDE for Angular | Microsoft MVP | Author | Speaker | Passionate Programmer"
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/ankitsharma_007"
+speaker_2: &craig
   speaker_in_speaker_lists: true
   speaker_name: Craig Spence
   speaker_pic_filename: craig-spence.png
@@ -12,7 +21,7 @@ speaker_1: &craig
   speaker_bio: "is a Software Engineer from New Zealand, working at Spotify in Stockholm. He is an Angular GDE and loves building cool things that help teams build cool things! He also loves punk rock, Disney’s Frozen, and his cat Cosy."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/phenomnominal"
-speaker_2: &emma
+speaker_3: &emma
   speaker_in_speaker_lists: true
   speaker_name: Emma Twersky
   speaker_pic_filename: emma-twersky.png
@@ -20,7 +29,7 @@ speaker_2: &emma
   speaker_bio: "is passionate about good user experience and design."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/twerske"
-speaker_3: &kate
+speaker_4: &kate
   speaker_in_speaker_lists: true
   speaker_name: Kate Sky
   speaker_pic_filename: kate-sky.png
@@ -87,9 +96,10 @@ speaker_10: &trishul
   speaker_twitter_url: "https://twitter.com/trishulgoel"
 
 speakers:
-  speaker_1: *craig
-  speaker_2: *emma
-  speaker_3: *kate
+  speaker_1: *ankit
+  speaker_2: *craig
+  speaker_3: *emma
+  speaker_4: *kate
   speaker_5: *mark
   speaker_6: *maxim
   speaker_7: *stanimira
@@ -153,19 +163,30 @@ days:
         service_icon: "cutlery"
 
     # talks
+
       talk1:
+        item_type: "talk"
+        track: *track_1
+#        start_datetime: 2021-11-12T09:45+01:00
+#        end_datetime: 2021-11-12T09:45+01:00
+        talk_title: "Create Smart Angular Apps Using Azure Computer Vision"
+        talk_description: "We will create an optical character recognition (OCR) application using Angular and the Azure Computer Vision Cognitive Service. Computer Vision is an AI service that analyses content in images. We will use the OCR feature of Computer Vision to detect the printed text in an image. The application will extract the text from the image and detects the language of the text. This app will support 25 different languages."
+        talk_video_url:
+        speakers:
+          speaker_1: *ankit
+      talk2:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
 #        end_datetime: 2021-11-12T09:45+01:00
         talk_title: "Betterer: Incremental Improvement"
         talk_description: "If you’re working on a project that has been around for a while, chances are there’s a few cobwebs 🕸 on some parts of your codebase that make you cringe…
-This is a totally normal part of the natural growth of an application. But how can we improve our software and correct past mistakes in a sustainable way, and without massively blowing out the scope? 🤔
-Let’s discuss an incremental approach to dealing with mature codebases! We will take some ideas from genetic 🧬 algorithms and micro-service architectures, and combine them with code analysis and snapshot 📸testing, and look at a pragmatic, evolutionary approach to codebase health and maintenance."
+        This is a totally normal part of the natural growth of an application. But how can we improve our software and correct past mistakes in a sustainable way, and without massively blowing out the scope? 🤔
+        Let’s discuss an incremental approach to dealing with mature codebases! We will take some ideas from genetic 🧬 algorithms and micro-service architectures, and combine them with code analysis and snapshot 📸testing, and look at a pragmatic, evolutionary approach to codebase health and maintenance."
         talk_video_url:
         speakers:
           speaker_1: *craig
-      talk2:
+      talk3:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
@@ -175,7 +196,7 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         talk_video_url:
         speakers:
           speaker_1: *kate
-      talk3:
+      talk4:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
@@ -185,7 +206,7 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         talk_video_url:
         speakers:
           speaker_1: *maxim
-      talk4:
+      talk5:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
@@ -197,7 +218,7 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         talk_video_url:
         speakers:
           speaker_1: *stanimira
-      talk5:
+      talk6:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
@@ -207,7 +228,7 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         talk_video_url:
         speakers:
           speaker_1: *tomas
-      talk6:
+      talk7:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
@@ -219,7 +240,7 @@ Let’s discuss an incremental approach to dealing with mature codebases! We wil
         talk_video_url:
         speakers:
           speaker_1: *trishul
-      talk7:
+      talk8:
         item_type: "talk"
         track: *track_1
 #        start_datetime: 2021-11-12T09:45+01:00
