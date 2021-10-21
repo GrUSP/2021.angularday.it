@@ -29,7 +29,15 @@ speaker_3: &emma
   speaker_bio: "is passionate about good user experience and design."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/twerske"
-speaker_4: &kate
+speaker_4: &jessica
+  speaker_in_speaker_lists: true
+  speaker_name: Jessica Janiuk
+  speaker_pic_filename: jessica-janiuk.png
+  speaker_role: Senior Software Engineer on the Angular team @ Google
+  speaker_bio: "In her free time, Jessica is a photographer, historical fencer, and cat mom. Prior to Google, she was an Organizer for GDG Cambridge and a Women Techmakers Ambassador. She has a long history of working in the front end across many popular web frameworks. She's known for her puns and takes pride in every groan she receives."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/@thepunderwoman"
+speaker_5: &kate
   speaker_in_speaker_lists: true
   speaker_name: Kate Sky
   speaker_pic_filename: kate-sky.png
@@ -42,15 +50,15 @@ My goal is to empower women to code and to have a fulfilling career while raisin
 In 2021 I started running a free weekly workshop where I teach how to get started with Angular."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/Katesky8"
-speaker_5: &mark
+speaker_6: &mark
   speaker_in_speaker_lists: true
   speaker_name: Mark Thompson
   speaker_pic_filename: mark-thompson.png
-  speaker_role: Developer Advocate @ Google (Angular Team)
+  speaker_role: Developer Advocate on the Angular team @ Google
   speaker_bio: "loves to teach and code. His love for both of these disciplines has led to becoming an award winning university instructor and software engineer. He comes with a passion for creating meaningful learning experiences. With over a decade of developing solutions across the tech stack, Mark likes to use that experience to break down fear of technology and make challenging technical topics more accessible. Lately, Mark has been spending time creating a disruptive fitness community by building Totally Strong, Inc. and working as a Developer Advocate at Google."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/marktechson"
-speaker_6: &maxim
+speaker_7: &maxim
   speaker_in_speaker_lists: true
   speaker_name: Maxim	Salnikov
   speaker_pic_filename: maxim-salnikov.png
@@ -58,7 +66,7 @@ speaker_6: &maxim
   speaker_bio: "is an Oslo-based cloud and web front-end geek. He builds web applications since the end of the last century and shares his extensive experience with many aspects of the web platform by speaking/training at developer events around the world. To introduce Angular to the developer community, Maxim is running his own technical events including ngVikings conference, Angular Oslo meetup, and ngCommunity gathering."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/webmaxru"
-speaker_7: &stanimira
+speaker_8: &stanimira
   speaker_in_speaker_lists: true
   speaker_name: Stanimira Vlaeva
   speaker_pic_filename: stanimira-vlaeva.png
@@ -66,7 +74,7 @@ speaker_7: &stanimira
   speaker_bio: "is a Developer Advocate at MongoDB and a Google Developer Expert for Angular. She loves open source and is part of the Technical Steering Committee for NativeScript. Her Twitter DMs are always open!"
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/StanimiraVlaeva"
-speaker_8: &tomas
+speaker_9: &tomas
   speaker_in_speaker_lists: true
   speaker_name: Tomas Trajan
   speaker_pic_filename: tomas-trajan.png
@@ -77,7 +85,7 @@ speaker_8: &tomas
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/tomastrajan"
   is_mc: true
-speaker_9: &tracy
+speaker_10: &tracy
   speaker_in_speaker_lists: true
   speaker_name: Tracy Lee
   speaker_pic_filename: tracy-lee.png
@@ -86,7 +94,7 @@ speaker_9: &tracy
   She is a member of the RxJS Core Team, the host of multiple web shows and podcasts including the Modern Web Podcast, and a keynote speaker who has traveled the world speaking about JavaScript, tech leadership, and diversity in tech."
   speaker_github_url: ""
   speaker_twitter_url: "https://twitter.com/ladyleet"
-speaker_10: &trishul
+speaker_11: &trishul
   speaker_in_speaker_lists: true
   speaker_name: Trishul Goel
   speaker_pic_filename: trishul-goel.png
@@ -99,13 +107,14 @@ speakers:
   speaker_1: *ankit
   speaker_2: *craig
   speaker_3: *emma
-  speaker_4: *kate
-  speaker_5: *mark
-  speaker_6: *maxim
-  speaker_7: *stanimira
-  speaker_8: *tomas
-  speaker_9: *tracy
-  speaker_10: *trishul
+  speaker_4: *jessica
+  speaker_5: *kate
+  speaker_6: *mark
+  speaker_7: *maxim
+  speaker_8: *stanimira
+  speaker_9: *tomas
+  speaker_10: *tracy
+  speaker_11: *trishul
 
 
 tracks:
@@ -252,6 +261,7 @@ days:
           speaker_1: *emma
           speaker_2: *mark
           speaker_3: *tracy
+          speaker_4: *jessica
       # talk8:
       #   item_type: "talk"
       #   track: *track_1
