@@ -1,5 +1,5 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: false
+generate_schedule_page: true
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
@@ -144,72 +144,39 @@ days:
     # service
       opening:
         item_type: "service"
-        start_datetime: 2021-11-12T09:45+01:00
-        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T09:15+01:00
+        end_datetime: 2021-11-12T09:30+01:00
         talk_title: "Opening by GrUSP"
       closing:
         item_type: "service"
-        start_datetime: 2021-11-12T09:45+01:00
-        end_datetime: 2021-11-12T09:45+01:00
-        talk_title: "See you tomorrow!"
+        start_datetime: 2021-11-12T18:15+01:00
+        end_datetime: 2021-11-12T18:30+01:00
+        talk_title: "closing by GrUSP"
       coffee-morning:
         item_type: "service"
-        start_datetime: 2021-11-12T09:45+01:00
-        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T11:00+01:00
+        end_datetime: 2021-11-12T11:30+01:00
         talk_title: "Coffee break"
         service_icon: "coffee"
       coffee-afternoon:
         item_type: "service"
-        start_datetime: 2021-11-12T09:45+01:00
-        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T16:15+01:00
+        end_datetime: 2021-11-12T16:30+01:00
         talk_title: "Coffee break"
         service_icon: "coffee"
       lunch:
         item_type: "service"
-        start_datetime: 2021-11-12T09:45+01:00
-        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T13:00+01:00
+        end_datetime: 2021-11-12T14:30+01:00
         talk_title: "Lunch break"
         service_icon: "cutlery"
 
     # talks
-
-      talk1:
-        item_type: "talk"
-        track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
-        talk_title: "Create Smart Angular Apps Using Azure Computer Vision"
-        talk_description: "We will create an optical character recognition (OCR) application using Angular and the Azure Computer Vision Cognitive Service. Computer Vision is an AI service that analyses content in images. We will use the OCR feature of Computer Vision to detect the printed text in an image. The application will extract the text from the image and detects the language of the text. This app will support 25 different languages."
-        talk_video_url:
-        speakers:
-          speaker_1: *ankit
-      talk2:
-        item_type: "talk"
-        track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
-        talk_title: "Betterer: Incremental Improvement"
-        talk_description: "If you’re working on a project that has been around for a while, chances are there’s a few cobwebs 🕸 on some parts of your codebase that make you cringe…
-        This is a totally normal part of the natural growth of an application. But how can we improve our software and correct past mistakes in a sustainable way, and without massively blowing out the scope? 🤔
-        Let’s discuss an incremental approach to dealing with mature codebases! We will take some ideas from genetic 🧬 algorithms and micro-service architectures, and combine them with code analysis and snapshot 📸testing, and look at a pragmatic, evolutionary approach to codebase health and maintenance."
-        talk_video_url:
-        speakers:
-          speaker_1: *craig
-      talk3:
-        item_type: "talk"
-        track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
- #       end_datetime: 2021-11-12T09:45+01:00
-        talk_title: "Who needs Inheritance and composition, when you can copy paste the same code in every class!"
-        talk_description: "Best practices of using composition over inheritance and how to make rich angular components by utilising directives!"
-        talk_video_url:
-        speakers:
-          speaker_1: *kate
       talk4:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T09:30+01:00
+        end_datetime: 2021-11-12T10:15+01:00
         talk_title: "Keynote: The status of Angular"
         talk_description: "What is the current status of the Angular framework? What new features are there in the latest version and on the roadmap? Let's have a bird-eye view of the framework to make informed technical decisions, to make sure that we use the latest best practices, and to look into the future of our Angular projects with confidence."
         talk_video_url:
@@ -218,8 +185,8 @@ days:
       talk5:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T10:15+01:00
+        end_datetime: 2021-11-12T11:00+01:00
         talk_title: "NoSQL Data Modeling for Front-end Developers"
         talk_description: "Data modeling is the process of figuring out how data should be represented and stored in your software system. Effective data models must balance between application needs, database performance characteristics and the structure of the data itself.
         But why would you care about data modeling if you’re an Angular developer? Well, understanding how data flows through your application, will help you consume your backend API in a more efficient way.
@@ -227,11 +194,33 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *stanimira
+      talk1:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T11:30+01:00
+        end_datetime: 2021-11-12T12:15+01:00
+        talk_title: "Create Smart Angular Apps Using Azure Computer Vision"
+        talk_description: "We will create an optical character recognition (OCR) application using Angular and the Azure Computer Vision Cognitive Service. Computer Vision is an AI service that analyses content in images. We will use the OCR feature of Computer Vision to detect the printed text in an image. The application will extract the text from the image and detects the language of the text. This app will support 25 different languages."
+        talk_video_url:
+        speakers:
+          speaker_1: *ankit
+      talk2:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T12:15+01:00
+        end_datetime: 2021-11-12T13:00+01:00
+        talk_title: "Betterer: Incremental Improvement"
+        talk_description: "If you’re working on a project that has been around for a while, chances are there’s a few cobwebs 🕸 on some parts of your codebase that make you cringe…
+        This is a totally normal part of the natural growth of an application. But how can we improve our software and correct past mistakes in a sustainable way, and without massively blowing out the scope? 🤔
+        Let’s discuss an incremental approach to dealing with mature codebases! We will take some ideas from genetic 🧬 algorithms and micro-service architectures, and combine them with code analysis and snapshot 📸testing, and look at a pragmatic, evolutionary approach to codebase health and maintenance."
+        talk_video_url:
+        speakers:
+          speaker_1: *craig
       talk6:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T14:30+01:00
+        end_datetime: 2021-11-12T15:30+01:00
         talk_title: "The best way to Architect Your Angular Libraries"
         talk_description: "In this talk we're going to explore how to architect Angular libraries with the help of sub-entries so that our consumers can benefit from the smallest possible bundle size and our teammates from great developer experience when adding additional components and services to the library itself!"
         talk_video_url:
@@ -240,8 +229,8 @@ days:
       talk7:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T15:30+01:00
+        end_datetime: 2021-11-12T16:15+01:00
         talk_title: "Destructuring frontend monoliths with Microfrontends"
         talk_description: "From loading Ajax requests in browsers to have full-blown frameworks; Javascript has come a long way. While moving stuff from backend to frontend the problems of backend are also ported. The Bigger the code gets bigger the problems, more dependencies, harder maintainability, eventually all the problems of a huge monolith.
         With Microfrontends, we can break this monolith into smaller independent, maintainable apps.
@@ -249,11 +238,21 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *trishul
+      talk3:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-12T16:45+01:00
+        end_datetime: 2021-11-12T17:30+01:00
+        talk_title: "Who needs Inheritance and composition, when you can copy paste the same code in every class!"
+        talk_description: "Best practices of using composition over inheritance and how to make rich angular components by utilising directives!"
+        talk_video_url:
+        speakers:
+          speaker_1: *kate
       talk8:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-12T09:45+01:00
-#        end_datetime: 2021-11-12T09:45+01:00
+        start_datetime: 2021-11-12T17:30+01:00
+        end_datetime: 2021-11-12T18:15+01:00
         talk_title: "Angular Core Team + Community: Moving Forward Together"
         talk_description: "Join the Angular core team and Google Developer Experts for this interactive panel where you can ask the Angular core team and Google Developer Experts questions about upcoming releases, community initiatives, and learning resources for Angular!"
         talk_video_url:
