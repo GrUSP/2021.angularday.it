@@ -1,9 +1,9 @@
 sponsors_block_title: "Thanks for your support!"
-# main:
-#   sponsor1:
-#     name: ""
-#     logo_filename: ""
-#     site_url: ""
+main:
+  sponsor1:
+    name: "Accenture"
+    logo_filename: "accenture.png"
+    site_url: "https://www.accenture.com/"
 # diamond:
 #   sponsor1:
 #     name: ""
