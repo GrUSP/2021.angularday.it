@@ -20,6 +20,10 @@ gold:
     logo_filename: "cloudinary.svg"
     site_url: "https://cloudinary.rocks/rry"
   sponsor2:
+    name: "Microsoft"
+    logo_filename: "microsoft.png"
+    site_url: "https://docs.microsoft.com/it-it/learn/"
+  sponsor3:
     name: "Workwave"
     logo_filename: "workwave.svg"
     site_url: "https://www.workwave.com/"
